@@ -8,7 +8,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	python-dev \
 	git \
 	build-essential \
-	libav-tools
+	libav-tools \
+	avrdude
 
 
 RUN apt-get clean \
