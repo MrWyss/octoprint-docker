@@ -7,7 +7,7 @@ docker run -d -p 5000 --device=/dev/ttyUSB0 --name=my_container_name mrwyss/octo
 
 
 
-QNAP Notes
+**QNAP Notes**
 you can run/start the package through the container station. Make sure that ups_yec (a UPS Service) is not running. 
 It makes interferes with USB Devices. To do so:
 
