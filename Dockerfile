@@ -1,7 +1,5 @@
 FROM ubuntu
 MAINTAINER marius.wyss+dockerhub@gmail.com
-#OctoPrint
-#docker run -d -p 5000:5000 --device=/dev/ttyUSB0 --name=octoprint-docker-testrun mrwyss/octoprint-docker
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
 	python-pip \

@@ -1,4 +1,7 @@
-# octoprint docker
+# Octoprint Dockerfile
+
+
+Thanks to : http://octoprint.org/
 
 docker run -d -p 5000 --device=/dev/ttyUSB0 --name=my_container_name mrwyss/octoprint-docker
 
