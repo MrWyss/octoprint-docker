@@ -5,8 +5,9 @@ Thanks to : http://octoprint.org/
 
 Contains: Octoprint and avrdude
 
-docker run -d -p 5000 --device=/dev/ttyUSB0 --name=my_container_name mrwyss/octoprint-docker
-
+	```
+	docker run -d -p 5000 --device=/dev/ttyUSB0 --name=my_container_name mrwyss/octoprint-docker
+	```
 
 **QNAP Notes**
 
