@@ -5,11 +5,11 @@ Thanks to : http://octoprint.org/
 
 Contains: Octoprint, curl and avconv
 
+```
+docker run -d -p 5000 --device=/dev/ttyUSB0 --name=mycontainername mrwyss/octoprint
+```
 
-	docker run -d -p 5000 --device=/dev/ttyUSB0 --name=my_container_name mrwyss/octoprint
-
-
-
+.
 
 **QNAP Notes**
 
@@ -17,19 +17,16 @@ you can run/start the package through the container station. Make sure that ups_
 It makes interferes with USB Devices. To do so:
 
 1. Find system config drive
-
 	```
 	echo "Your autorun.sh needs to be placed in: $(getcfg system "system device")6"
 	```
 
 2. Mount the config dir
-	
 	```
 	mount -t ext2 $(getcfg system "system device")6 /tmp/config
 	```
 
 3. create a autorun.sh file
-
 	```
 	vi /tmp/config/autorun.sh
 	```
@@ -47,13 +44,13 @@ Content:
 	echo 'done' >> /sbin/ups_yec
 
 4. Add execute rights
-
 	```
 	chmod +x /tmp/config/autorun.sh
 	```
+
 5. unmount the config drive
- 
- 	```
+  	```
 	umount /tmp/config
 	```
+
 6. Reboot
