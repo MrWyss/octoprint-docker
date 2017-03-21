@@ -6,10 +6,21 @@ Thanks to : http://octoprint.org/
 Contains: Octoprint, curl and avconv
 
 ```
+//without mjpg streamer
 docker run -d -p 5000 --device=/dev/ttyUSB0 --name=mycontainername mrwyss/octoprint
+//wit mjpg streamer
+docker run -d --link mjpg-streamer -p xxxx:5000 --device=/dev/ttyUSB0 --name=octoprint_linked mrwyss/octoprint
+
 ```
 
 .
+**Webcam Support**
+needs https://hub.docker.com/r/mrwyss/mjpg-streamer/ and the link feature of docker, since I don't quite understand the network feature yet. 
+Any help would be appreciated.
+
+Once you run you need to find the mjgp-streamer internal ip. Add that for the snapshot url. e.g. http://10.0.3.2:80/?action=snapshot
+Video Url can be set to http://host:port/?action=stream 
+
 
 **QNAP Notes**
 
