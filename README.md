@@ -19,7 +19,7 @@ needs https://hub.docker.com/r/mrwyss/mjpg-streamer/ and the link feature of doc
 Any help would be appreciated.
 
 Once you run you need to find the mjgp-streamer internal ip. Add that for the snapshot url. e.g. http://10.0.3.2:80/?action=snapshot
-Video Url can be set to http://host:port/?action=stream 
+Video Url can be set to http://host:port/?action=stream in the octoprint gui
 
 
 **QNAP Notes**
