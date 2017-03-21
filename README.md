@@ -13,7 +13,7 @@ docker run -d --link mjpg-streamer -p xxxx:5000 --device=/dev/ttyUSB0 --name=oct
 
 ```
 
-.
+
 **Webcam Support**
 needs https://hub.docker.com/r/mrwyss/mjpg-streamer/ and the link feature of docker, since I don't quite understand the network feature yet. 
 Any help would be appreciated.
